@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Misty peak palette */
+@theme {
+  --color-navy: #1e3a5f;
+  --color-navy-deep: #0f2340;
+  --color-dusty: #4a7ba6;
+  --color-mist: #a8c5da;
+  --color-mist-soft: #e3edf5;
+  --color-cloud: #f4f7fa;
+  --color-line: #dce6ef;
+  --color-ink-soft: #42566e;
+  --color-peach: #e8a87c;
+  --color-peach-hover: #e09868;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-cloud text-navy font-sans antialiased;
+    line-height: 1.6;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-dusty);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
