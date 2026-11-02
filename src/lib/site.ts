@@ -22,7 +22,7 @@ export const site = {
   country: "IN",
   social: {
     instagram: "https://instagram.com/bluepeaklab",
-    linkedin: "https://linkedin.com/company/bluepeaklab",
+    linkedin: "https://www.linkedin.com/company/bluepeak-lab",
   },
   keywords: [
     "website design Noida",
